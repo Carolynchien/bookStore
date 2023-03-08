@@ -14,6 +14,16 @@ configurations {
 	}
 }
 
+
+jar {
+	manifest {
+		attributes 'Implementation-Title': 'book Store',
+				'Implementation-Version': version,
+				'Main-Class': 'com.weCode.bookStore.BookStoreApplication'
+	}
+}
+
+
 repositories {
 	mavenCentral()
 }
