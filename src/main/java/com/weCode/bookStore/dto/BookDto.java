@@ -1,16 +1,24 @@
 package com.weCode.bookStore.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.Column;
+import lombok.*;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.UUID;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class BookDto {
+
     private String title;
+
+    private UUID id;
+
+    private String description;
+
+    private int releaseYear;
 
 
 }
